@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta  http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Spinners!</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="main">
+		<h1>Hello, welcome to my beautiful spinner site!</h1>
+		<p>Cat ipsum dolor sit amet, cheetah. Sphynx egyptian mau lynx. Leopard lion lynx persian tabby for havana brown tomcat. Lion. Singapura siberian and lynx maine coon so american bobtail russian blue yet himalayan. Kitten cougar sphynx malkin ragdoll but tom. American shorthair american shorthair savannah grimalkin. Cheetah ocicat and scottish fold. British shorthair tabby so malkin but tiger and cheetah yet lion so abyssinian . Tabby cornish rex ragdoll american bobtail for birman singapura. Jaguar burmese yet himalayan. Siberian birman lion but grimalkin american shorthair but norwegian forest or tomcat. British shorthair burmese cougar ocicat or lynx munchkin ocicat. Savannah havana brown burmese for american bobtail. Savannah panther grimalkin. </p>
+	</div>
+	<script type="text/javascript">
+		document.querySelector(".main p").style.display = "none";
+		document.querySelector(".main").classList.add("spinner-1");
+		// Mimic Server Request
+		setTimeout(() => {
+			document.querySelector(".main").classList.remove("spinner-1");
+			document.querySelector(".main p").style.display = "block";
+		}, 4000);
+	</script>
+</body>
+</html>
